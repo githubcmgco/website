@@ -1,16 +1,58 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
-<style type="text/css">
-body {
-	background-color: #1b2c3c;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 16px;
 }
 </style>
 </head>
-
 <body>
-<div align="center"><a href="mailto:info@cmgco.com"><img src="../CMG.jpg" width="1024" height="687" alt="" /></a></div>
+
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container">
+  <a href="mailto:info@cmgco.com"><img src="../CMG.jpg" width="1024" height="687" alt="" /></a>
+  <div class="bottom-left">© COPYRIGHT 2023 CMGCO, LLC. ALL RIGHTS RESERVED</div>
+  <div class="top-left">CATALYST MANAGEMENT GROUP</div>
+  <div class="centered">1154 EAST PUTNAM AVE, STE. 1 | GREENWICH, CT 06878
+  <br>(917) 557-1335
+  <br>FOR MORE INFORMATION EMAIL: INFO@CMGCO.COM</div>
+</div>
+
 </body>
-</html>
+</html> 
