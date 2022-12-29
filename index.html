@@ -45,6 +45,7 @@ e
   left: 16px;
   font-size: 30px;
 }
+
 a:link {
   color: white;
   background-color: transparent;
@@ -65,11 +66,32 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+img {
+  /*  To contain the image to the confines of the div  */
+  max-width: 100%;
+}
+.img-gradient {
+  max-width: 100%; 
+  width: 800px;
+  margin: auto;
+}
+.img-gradient::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+}
 </style>
 </head>
 <body>
-<div class="container">
-  <a href="mailto:info@cmgco.com"><img src="../CMG.jpg" width="1024" height="687" alt="" style="width:100%;"></a>
+  <div class="container">
+  	<div class="img-gradient">
+		<a href="mailto:info@cmgco.com"><img src="../CMG.jpg" width="1024" height="687" alt="" style="width:100%;"></a>
+	</div>
   <div class="bottom-left">© COPYRIGHT 2023 CMGCO, LLC. ALL RIGHTS RESERVED</div>
   <div class="top-left">CATALYST MANAGEMENT GROUP</div>
   <div class="centered">1154 EAST PUTNAM AVE, STE. 1 | GREENWICH, CT 06878
@@ -79,3 +101,6 @@ a:active {
 <body style="background-color:rgb(31,43,58);">
 </body>
 </html> 
+
+
+
