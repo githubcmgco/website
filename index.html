@@ -3,9 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-p {
-  font-size: 30px;
-}
+
 .container {
   position: relative;
   text-align: left;
@@ -14,19 +12,19 @@ p {
 }
 .bottom-left {
   position: absolute;
-  bottom: 8px;
+  bottom: 15px;
   left: 16px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .top-left {
   position: absolute;
-  top: 8px;
+  top:  5px;
   left: 16px;
   font-size: 30px;
 }
-e
-.top-right {
+
+/*.top-right {
   position: absolute;
   top: 8px;
   right: 16px;
@@ -38,13 +36,14 @@ e
   bottom: 8px;
   right: 16px;
 }
-
+*/
 .centered {
   position: absolute;
-  top: 35%;
+  top: 79%;
   left: 16px;
-  font-size: 30px;
+  font-size: 24px;
 }
+
 a:link {
   color: white;
   background-color: transparent;
@@ -65,16 +64,47 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+img {
+  /*  To contain the image to the confines of the div  */
+    height: 100%; 
+    width: 100%; 
+    max-width: auto; 
+    max-height: 300px;
+}
+.img-gradient {
+  max-width: 100%; 
+  margin: auto;
+}
+.img-gradient::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+  margin-top: -150px;
+  height: 250px;
+  width: 100%;
+  content: '';
+}
+.img-gradient::before {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+  height: 50px;
+  width: 100%;
+  content: '';
+}
 </style>
 </head>
 <body>
-<div class="container">
-  <a href="mailto:info@cmgco.com"><img src="../CMG.jpg" width="1024" height="687" alt="" style="width:100%;"></a>
+</div>
+  <div class="container">
+  	<div class="img-gradient">
+		<a href="mailto:info@cmgco.com"><img src="../CMG.jpg"  alt="" ></a>
+	</div>
   <div class="bottom-left">© COPYRIGHT 2023 CMGCO, LLC. ALL RIGHTS RESERVED</div>
   <div class="top-left">CATALYST MANAGEMENT GROUP</div>
-  <div class="centered">1154 EAST PUTNAM AVE, STE. 1 | GREENWICH, CT 06878
-  <br>(917) 557-1335
-  <br>FOR MORE INFORMATION EMAIL: <a href="mailto:INFO@CMGCO.COM">INFO@CMGCO.COM</a></div>
+  <div class="centered">1154 East Putnam Ave, STE. 1 / Greenwich, CT 06878 / (917) 557-1335
+  <br>For More Information Email - <a href="mailto:INFO@CMGCO.COM">INFO@CMGCO.COM</a></div>
 </div>
 <body style="background-color:rgb(31,43,58);">
 </body>
